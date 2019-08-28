@@ -8,6 +8,11 @@ import { MenuItem } from 'primeng/api';
 })
 export class AppComponent implements OnInit {
   items: MenuItem[];
+  display = false;
+
+  showDialog() {
+      this.display = true;
+  }
 
   ngOnInit() {
     this.items = [

@@ -10,6 +10,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { DialogModule } from 'primeng/dialog';
+import {PasswordModule} from 'primeng/password';
+import {TooltipModule} from 'primeng/tooltip';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { DialogModule } from 'primeng/dialog';
     MenubarModule,
     ButtonModule,
     InputTextModule,
-    DialogModule
+    DialogModule,
+    PasswordModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
