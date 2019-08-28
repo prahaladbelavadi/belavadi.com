@@ -49,8 +49,8 @@ export class AppComponent implements OnInit {
         items: [
           { label: 'Contact', icon: 'pi pi-fw pi-trash' },
           { label: 'Ethics', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Accolades', icon: 'pi pi-fw pi-refresh' },
           { label: 'Books', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Influences', icon: 'pi pi-fw pi-refresh' },
           { label: 'Time Line', icon: 'pi pi-fw pi-refresh' },
           {
             label: 'Pursuits', icon: 'pi pi-fw pi-refresh',
