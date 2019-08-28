@@ -24,6 +24,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova-dark/theme.css",
+              "node_modules/primeng/resources/primeng.css",
               "src/styles.css"
             ],
             "scripts": []
