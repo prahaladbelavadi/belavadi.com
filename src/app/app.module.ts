@@ -9,6 +9,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { DialogModule } from 'primeng/dialog';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { InputTextModule } from 'primeng/inputtext';
     AccordionModule,
     MenubarModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
