@@ -12,11 +12,13 @@ import { InputTextModule } from 'primeng/inputtext';
 import { DialogModule } from 'primeng/dialog';
 import {PasswordModule} from 'primeng/password';
 import {TooltipModule} from 'primeng/tooltip';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
