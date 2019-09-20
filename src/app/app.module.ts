@@ -17,12 +17,18 @@ import { WorkbenchComponent } from './workbench/workbench.component';
 import { SlideMenuModule } from 'primeng/slidemenu';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { PanelModule } from 'primeng/panel';
+import { LandingComponent } from './landing/landing.component';
+import {CarouselModule} from 'primeng/carousel';
+import {StepsModule} from 'primeng/steps';
+import {SplitButtonModule} from 'primeng/splitbutton';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WorkbenchComponent
+    WorkbenchComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,10 @@ import { PanelModule } from 'primeng/panel';
     TooltipModule,
     SlideMenuModule,
     TieredMenuModule,
-    PanelModule
+    PanelModule,
+    CarouselModule, 
+    StepsModule,
+    SplitButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
