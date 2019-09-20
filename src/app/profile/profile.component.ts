@@ -1,35 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
 import {MenuItem} from 'primeng/api';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class HeaderComponent implements OnInit {
-
-  items: MenuItem[];
-  display = false;
-
-  constructor(public route:Router){}
-
-  showDialog() {
-      this.display = true;
-  }
+export class ProfileComponent implements OnInit {
+  constructor() { }
+items: MenuItem[];
 
   ngOnInit() {
     this.items = [
       {
+        label: 'Settings',
+        icon: 'pi pi-fw pi-pencil',
+        items: [
+          {
+            label: 'Subscription',
+            icon: 'pi pi-fw pi-plus'
+          },  
+          { 
+            label: 'Email',
+            icon: 'pi pi-fw pi-pencil'
+          }
+        ]
+      },
+      {
         label: 'Personal',
-        items: [{
-          label: 'Mile Stone',
-          icon: 'pi pi-fw pi-plus',
-          items: [
-            { label: 'Life' },
-            { label: 'Family' },
-            { label: 'Friends' }
-          ]
+        icon: 'pi pi-fw pi-pencil',
+        items: [
+          {
+          label: 'Mile Stones'
         },
         { label: 'Location' },
         { label: 'Finance' },
@@ -48,7 +50,7 @@ export class HeaderComponent implements OnInit {
           { label: 'Refresh', icon: 'pi pi-fw pi-refresh' },
           { label: 'Accolades', icon: 'pi pi-fw pi-refresh' },
           { label: 'Non Profit', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Local Business', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Local Business', icon: 'pi pi-fw pi-refresh' }
         ]
       },
       {
@@ -83,9 +85,7 @@ export class HeaderComponent implements OnInit {
               label: 'Email',
               icon: ''
             }]
-          },
-
-        ]
+          }        ]
       },
       {
         label: 'Resources',
@@ -95,13 +95,8 @@ export class HeaderComponent implements OnInit {
           { label: 'Learning', icon: 'pi pi-fw pi-refresh' },
           { label: 'Projects', icon: 'pi pi-fw pi-refresh' },
           { label: 'Newsletter', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Projects', icon: 'pi pi-fw pi-refresh' },
-        ]
+          { label: 'Projects', icon: 'pi pi-fw pi-refresh' },        ]
       }
-    ];
-  }
-
-  login(){
-      this.route.navigate(['workbench'])
+    ]
   }
 }

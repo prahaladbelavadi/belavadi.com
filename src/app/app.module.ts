@@ -21,6 +21,7 @@ import { LandingComponent } from './landing/landing.component';
 import {CarouselModule} from 'primeng/carousel';
 import {StepsModule} from 'primeng/steps';
 import {SplitButtonModule} from 'primeng/splitbutton';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {SplitButtonModule} from 'primeng/splitbutton';
     AppComponent,
     HeaderComponent,
     WorkbenchComponent,
-    LandingComponent
+    LandingComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
