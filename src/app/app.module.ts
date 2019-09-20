@@ -16,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { WorkbenchComponent } from './workbench/workbench.component';
 import { SlideMenuModule } from 'primeng/slidemenu';
 import { TieredMenuModule } from 'primeng/tieredmenu';
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
     PasswordModule,
     TooltipModule,
     SlideMenuModule,
-    TieredMenuModule
+    TieredMenuModule,
+    PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
