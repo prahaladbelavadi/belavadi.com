@@ -18,39 +18,24 @@ export class WorkbenchComponent implements OnInit {
         icon: 'pi pi-fw pi-pencil',
         items: [{
           label: 'New',
-          icon: 'pi pi-fw pi-plus',
-          items: [
-            { label: 'Sleep' },
-            { label: 'Workout' },
-            { label: 'Running' }
-          ]
+          icon: 'pi pi-fw pi-plus'
         },  
         {
         label: 'Current',
         icon: 'pi pi-fw pi-pencil',
-        items: [{
-          label: 'New',
-          icon: 'pi pi-fw pi-plus',
-          items: [
+        items: [ 
             { label: 'Sleep' },
             { label: 'Workout' },
-            { label: 'Running' }
-          ]
-        },
+            { label: 'Running' },
         ]
       },
       {
         label: 'Past',
         icon: 'pi pi-fw pi-pencil',
-        items: [{
-          label: 'New',
-          icon: 'pi pi-fw pi-plus',
-          items: [
+        items: [       
             { label: 'Sleep' },
             { label: 'Workout' },
-            { label: 'Running' }
-          ]
-        },
+            { label: 'Running' },
         ]
       }
         ]
