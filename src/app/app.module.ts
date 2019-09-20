@@ -10,15 +10,18 @@ import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { DialogModule } from 'primeng/dialog';
-import {PasswordModule} from 'primeng/password';
-import {TooltipModule} from 'primeng/tooltip';
+import { PasswordModule } from 'primeng/password';
+import { TooltipModule } from 'primeng/tooltip';
 import { HeaderComponent } from './header/header.component';
-
+import { WorkbenchComponent } from './workbench/workbench.component';
+import { SlideMenuModule } from 'primeng/slidemenu';
+import { TieredMenuModule } from 'primeng/tieredmenu';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    WorkbenchComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,9 @@ import { HeaderComponent } from './header/header.component';
     InputTextModule,
     DialogModule,
     PasswordModule,
-    TooltipModule
+    TooltipModule,
+    SlideMenuModule,
+    TieredMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
