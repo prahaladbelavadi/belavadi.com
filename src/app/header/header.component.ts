@@ -102,6 +102,7 @@ export class HeaderComponent implements OnInit {
   }
 
   login(){
-      this.route.navigate(['workbench'])
+      this.route.navigate(['workbench']);
+      this.display = false;
   }
 }

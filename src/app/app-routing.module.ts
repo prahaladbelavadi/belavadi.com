@@ -9,10 +9,12 @@ const routes: Routes = [
     path: '', pathMatch: 'full', component: LandingComponent
   },
   {
-    path: 'workbench', component: WorkbenchComponent
+    path: 'workbench', pathMatch: 'full', children: [
+      { path: '', component: WorkbenchComponent },
+    ]
   },
   {
-    path: 'profile', component: ProfileComponent
+    path: 'profile', component: ProfileComponent, children: []
   }
 ];
 
