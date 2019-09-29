@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
     this.items = [
       {
         label: 'Personal',
+        command: (onclick) => { this.route.navigate(['/personal']); },
         items: [{
           label: 'Mile Stone',
           icon: 'pi pi-fw pi-plus',

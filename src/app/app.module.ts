@@ -17,10 +17,12 @@ import { SlideMenuModule } from 'primeng/slidemenu';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { PanelModule } from 'primeng/panel';
 import { LandingComponent } from './landing/landing.component';
-import {CarouselModule} from 'primeng/carousel';
-import {StepsModule} from 'primeng/steps';
-import {SplitButtonModule} from 'primeng/splitbutton';
+import { CarouselModule } from 'primeng/carousel';
+import { StepsModule } from 'primeng/steps';
+import { SplitButtonModule } from 'primeng/splitbutton';
 import { ProfileComponent } from './profile/profile.component';
+import { PersonalComponent } from './personal/personal.component';
+import { CardModule } from 'primeng/card';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ProfileComponent } from './profile/profile.component';
     AppComponent,
     HeaderComponent,
     LandingComponent,
-    ProfileComponent
+    ProfileComponent,
+    PersonalComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { ProfileComponent } from './profile/profile.component';
     PanelModule,
     CarouselModule,
     StepsModule,
-    SplitButtonModule
+    SplitButtonModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
