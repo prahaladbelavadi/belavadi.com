@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
-import { PersonalComponent } from './personal/personal.component';
+import { PersonalComponent } from './header/personal/personal.component';
+import { ProfessionalComponent } from './header/professional/professional.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,9 @@ const routes: Routes = [
   },
   {
     path: 'personal', pathMatch: 'full', component: PersonalComponent
+  },
+  {
+    path: 'professional', pathMatch: 'full', component: ProfessionalComponent
   },
   {
     path: 'profile', component: ProfileComponent, children: []

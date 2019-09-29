@@ -21,8 +21,9 @@ import { CarouselModule } from 'primeng/carousel';
 import { StepsModule } from 'primeng/steps';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { ProfileComponent } from './profile/profile.component';
-import { PersonalComponent } from './personal/personal.component';
+import { PersonalComponent } from './header/personal/personal.component';
 import { CardModule } from 'primeng/card';
+import { ProfessionalComponent } from './header/professional/professional.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CardModule } from 'primeng/card';
     HeaderComponent,
     LandingComponent,
     ProfileComponent,
-    PersonalComponent
+    PersonalComponent,
+    ProfessionalComponent
   ],
   imports: [
     BrowserModule,
