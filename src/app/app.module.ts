@@ -13,7 +13,6 @@ import { DialogModule } from 'primeng/dialog';
 import { PasswordModule } from 'primeng/password';
 import { TooltipModule } from 'primeng/tooltip';
 import { HeaderComponent } from './header/header.component';
-import { WorkbenchComponent } from './workbench/workbench.component';
 import { SlideMenuModule } from 'primeng/slidemenu';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { PanelModule } from 'primeng/panel';
@@ -28,7 +27,6 @@ import { ProfileComponent } from './profile/profile.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    WorkbenchComponent,
     LandingComponent,
     ProfileComponent
   ],
@@ -46,7 +44,7 @@ import { ProfileComponent } from './profile/profile.component';
     SlideMenuModule,
     TieredMenuModule,
     PanelModule,
-    CarouselModule, 
+    CarouselModule,
     StepsModule,
     SplitButtonModule
   ],

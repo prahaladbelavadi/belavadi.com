@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import {MenuItem} from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-header',
@@ -12,10 +12,10 @@ export class HeaderComponent implements OnInit {
   items: MenuItem[];
   display = false;
 
-  constructor(public route:Router){}
+  constructor(public route: Router) { }
 
   showDialog() {
-      this.display = true;
+    this.display = true;
   }
 
   ngOnInit() {
@@ -101,8 +101,8 @@ export class HeaderComponent implements OnInit {
     ];
   }
 
-  login(){
-      this.route.navigate(['workbench']);
-      this.display = false;
+  login() {
+    this.route.navigate(['workbench']);
+    this.display = false;
   }
 }
