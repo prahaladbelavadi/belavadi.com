@@ -24,6 +24,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { PersonalComponent } from './header/personal/personal.component';
 import { CardModule } from 'primeng/card';
 import { ProfessionalComponent } from './header/professional/professional.component';
+import { AboutComponent } from './header/about/about.component';
+import { ResourcesComponent } from './header/resources/resources.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { ProfessionalComponent } from './header/professional/professional.compon
     LandingComponent,
     ProfileComponent,
     PersonalComponent,
-    ProfessionalComponent
+    ProfessionalComponent,
+    AboutComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,

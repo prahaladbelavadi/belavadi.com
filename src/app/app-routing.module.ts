@@ -4,6 +4,8 @@ import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PersonalComponent } from './header/personal/personal.component';
 import { ProfessionalComponent } from './header/professional/professional.component';
+import { AboutComponent } from './header/about/about.component';
+import { ResourcesComponent } from './header/resources/resources.component';
 
 const routes: Routes = [
   {
@@ -14,6 +16,12 @@ const routes: Routes = [
   },
   {
     path: 'professional', pathMatch: 'full', component: ProfessionalComponent
+  },
+  {
+    path: 'about', pathMatch: 'full', component: AboutComponent
+  },
+  {
+    path: 'resources', pathMatch: 'full', component: ResourcesComponent
   },
   {
     path: 'profile', component: ProfileComponent, children: []
