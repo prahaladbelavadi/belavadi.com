@@ -26,6 +26,7 @@ import { CardModule } from 'primeng/card';
 import { ProfessionalComponent } from './header/professional/professional.component';
 import { AboutComponent } from './header/about/about.component';
 import { ResourcesComponent } from './header/resources/resources.component';
+import { OrganizationChartModule } from 'primeng/organizationchart';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { ResourcesComponent } from './header/resources/resources.component';
     CarouselModule,
     StepsModule,
     SplitButtonModule,
-    CardModule
+    CardModule,
+    OrganizationChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
