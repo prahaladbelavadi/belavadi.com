@@ -56,6 +56,7 @@ export class HeaderComponent implements OnInit {
       {
         label: 'About',
         icon: 'pi pi-fw pi-pencil',
+        command: (onclick) => { this.route.navigate(['/about']); },
         items: [
           { label: 'Contact', icon: 'pi pi-fw pi-trash' },
           { label: 'Ethics', icon: 'pi pi-fw pi-refresh' },
@@ -70,7 +71,7 @@ export class HeaderComponent implements OnInit {
               }
             ]
           },
-          { label: 'Activities', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Activities', icon: 'pi pi-fw pi-refresh', },
           {
             label: 'Social', icon: 'pi pi-fw pi-refresh',
             items: [{
@@ -92,6 +93,7 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Resources',
         icon: 'pi pi-fw pi-pencil',
+        command: (onclick) => { this.route.navigate(['/resources']); },
         items: [
           { label: 'Blog', icon: 'pi pi-fw pi-trash' },
           { label: 'Learning', icon: 'pi pi-fw pi-refresh' },
