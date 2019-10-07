@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
     this.items = [
       {
         label: 'Personal',
+        icon: 'pi pi-fw pi-pencil',
         command: (onclick) => { this.route.navigate(['/personal']); },
         items: [{
           label: 'Mile Stone',
@@ -99,7 +100,6 @@ export class HeaderComponent implements OnInit {
           { label: 'Learning', icon: 'pi pi-fw pi-refresh' },
           { label: 'Projects', icon: 'pi pi-fw pi-refresh' },
           { label: 'Newsletter', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Projects', icon: 'pi pi-fw pi-refresh' },
         ]
       }
     ];
