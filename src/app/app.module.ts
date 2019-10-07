@@ -27,6 +27,8 @@ import { ProfessionalComponent } from './header/professional/professional.compon
 import { AboutComponent } from './header/about/about.component';
 import { ResourcesComponent } from './header/resources/resources.component';
 import { OrganizationChartModule } from 'primeng/organizationchart';
+import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.component';
+import {ToolbarModule} from 'primeng/toolbar';
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { OrganizationChartModule } from 'primeng/organizationchart';
     PersonalComponent,
     ProfessionalComponent,
     AboutComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    MileStoneComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +62,7 @@ import { OrganizationChartModule } from 'primeng/organizationchart';
     SplitButtonModule,
     CardModule,
     OrganizationChartModule,
+    ToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

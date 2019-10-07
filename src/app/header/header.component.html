@@ -1,19 +1,27 @@
 <p-menubar [model]="items">
-    <div>
-        <button pButton label="Login" (click)="showDialog()" icon="fa fa-sign-out" style="margin-left:.25em"></button>
-    </div>
+  <div>
+    <button pButton label="Login" (click)="showDialog()" icon="fa fa-sign-out" style="margin-left:.25em"></button>
+  </div>
 </p-menubar>
 
 <router-outlet></router-outlet>
 
-<p-dialog header="Login" [(visible)]="display" [modal]="true" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" [baseZIndex]="10000">
+<p-dialog header="Login" [(visible)]="display" [modal]="true" [responsive]="true"
+  [style]="{width: '350px', minWidth: '200px'}" [minY]="70" [baseZIndex]="10000">
 
 
-    <input type="text" pInputText placeholder="Username" pTooltip="Enter your username" tooltipPosition="right" tooltipEvent="hover" />
-    <input pInputText type="password" placeholder="Password" pTooltip="Enter your password" tooltipPosition="right" />
+  <input type="text" pInputText placeholder="Username" pTooltip="Enter your username" tooltipPosition="right"
+    tooltipEvent="hover" />
+  <input pInputText type="password" placeholder="Password" pTooltip="Enter your password" tooltipPosition="right" />
 
-    <p-footer>
-        <button type="button" pButton icon="pi pi-check" (click)="login()" label="Yes"></button>
-        <button type="button" pButton icon="pi pi-close" (click)="display=false" label="Anon" class="ui-button-secondary"></button>
-    </p-footer>
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="login()" label="Yes"></button>
+    <button type="button" pButton icon="pi pi-close" (click)="display=false" label="Anon"
+      class="ui-button-secondary"></button>
+  </p-footer>
 </p-dialog>
+
+
+<p-toolbar class="footer">
+  <span>All rights reserved!</span>
+</p-toolbar>

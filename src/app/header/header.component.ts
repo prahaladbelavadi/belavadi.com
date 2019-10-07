@@ -27,11 +27,11 @@ export class HeaderComponent implements OnInit {
         items: [{
           label: 'Mile Stone',
           icon: 'pi pi-fw pi-plus',
-          items: [
-            { label: 'Life' },
-            { label: 'Family' },
-            { label: 'Friends' }
-          ]
+          // items: [
+          //   { label: 'Life' },
+          //   { label: 'Family' },
+          //   { label: 'Friends' }
+          // ]
         },
         { label: 'Location' },
         { label: 'Finance' },
