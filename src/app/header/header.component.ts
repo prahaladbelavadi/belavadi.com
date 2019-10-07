@@ -47,11 +47,14 @@ export class HeaderComponent implements OnInit {
         command: (onclick) => { this.route.navigate(['/professional']); },
         items: [
           { label: 'Curriculum Vitae', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Delete', icon: 'pi pi-fw pi-trash' },
-          { label: 'Refresh', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Open sources', icon: 'pi pi-fw pi-trash' },
+          { label: 'Research', icon: 'pi pi-fw pi-refresh' },
           { label: 'Accolades', icon: 'pi pi-fw pi-refresh' },
           { label: 'Non Profit', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Volunteer', icon: 'pi pi-fw pi-refresh' },
           { label: 'Local Business', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Skill set', icon: 'pi pi-fw pi-refresh' },
+
         ]
       },
       {
