@@ -58,7 +58,7 @@ import { OrganizationChartModule } from 'primeng/organizationchart';
     StepsModule,
     SplitButtonModule,
     CardModule,
-    OrganizationChartModule
+    OrganizationChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

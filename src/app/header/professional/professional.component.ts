@@ -7,40 +7,42 @@ import { TreeNode } from 'primeng/api';
   styleUrls: ['./professional.component.css']
 })
 export class ProfessionalComponent implements OnInit {
+  data2: TreeNode[];
+
+  selectedNode: TreeNode;
 
   constructor() { }
 
-
-  data: TreeNode[];
-
   ngOnInit() {
-    this.data = [{
-      label: 'Root',
+    this.data2 = [{
+      label: 'F.C Barcelona',
+      expanded: true,
       children: [
         {
-          label: 'Child 1',
+          label: 'F.C Barcelona',
+          expanded: true,
           children: [
             {
-              label: 'Grandchild 1.1'
+              label: 'Chelsea FC'
             },
             {
-              label: 'Grandchild 1.2'
+              label: 'F.C. Barcelona'
             }
           ]
         },
         {
-          label: 'Child 2',
+          label: 'Real Madrid',
+          expanded: true,
           children: [
             {
-              label: 'Child 2.1'
+              label: 'Bayern Munich'
             },
             {
-              label: 'Child 2.2'
+              label: 'Real Madrid'
             }
           ]
         }
       ]
     }];
-
   }
 }
