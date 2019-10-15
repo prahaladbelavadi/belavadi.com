@@ -13,24 +13,35 @@ import { DialogModule } from 'primeng/dialog';
 import { PasswordModule } from 'primeng/password';
 import { TooltipModule } from 'primeng/tooltip';
 import { HeaderComponent } from './header/header.component';
-import { WorkbenchComponent } from './workbench/workbench.component';
 import { SlideMenuModule } from 'primeng/slidemenu';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { PanelModule } from 'primeng/panel';
 import { LandingComponent } from './landing/landing.component';
-import {CarouselModule} from 'primeng/carousel';
-import {StepsModule} from 'primeng/steps';
-import {SplitButtonModule} from 'primeng/splitbutton';
+import { CarouselModule } from 'primeng/carousel';
+import { StepsModule } from 'primeng/steps';
+import { SplitButtonModule } from 'primeng/splitbutton';
 import { ProfileComponent } from './profile/profile.component';
+import { PersonalComponent } from './header/personal/personal.component';
+import { CardModule } from 'primeng/card';
+import { ProfessionalComponent } from './header/professional/professional.component';
+import { AboutComponent } from './header/about/about.component';
+import { ResourcesComponent } from './header/resources/resources.component';
+import { OrganizationChartModule } from 'primeng/organizationchart';
+import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.component';
+import {ToolbarModule} from 'primeng/toolbar';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WorkbenchComponent,
     LandingComponent,
-    ProfileComponent
+    ProfileComponent,
+    PersonalComponent,
+    ProfessionalComponent,
+    AboutComponent,
+    ResourcesComponent,
+    MileStoneComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +57,12 @@ import { ProfileComponent } from './profile/profile.component';
     SlideMenuModule,
     TieredMenuModule,
     PanelModule,
-    CarouselModule, 
+    CarouselModule,
     StepsModule,
-    SplitButtonModule
+    SplitButtonModule,
+    CardModule,
+    OrganizationChartModule,
+    ToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

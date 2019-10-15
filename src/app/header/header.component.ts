@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import {MenuItem} from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-header',
@@ -12,24 +12,26 @@ export class HeaderComponent implements OnInit {
   items: MenuItem[];
   display = false;
 
-  constructor(public route:Router){}
+  constructor(public route: Router) { }
 
   showDialog() {
-      this.display = true;
+    this.display = true;
   }
 
   ngOnInit() {
     this.items = [
       {
         label: 'Personal',
+        icon: 'pi pi-fw pi-pencil',
+        command: (onclick) => { this.route.navigate(['/personal']); },
         items: [{
           label: 'Mile Stone',
           icon: 'pi pi-fw pi-plus',
-          items: [
-            { label: 'Life' },
-            { label: 'Family' },
-            { label: 'Friends' }
-          ]
+          // items: [
+          //   { label: 'Life' },
+          //   { label: 'Family' },
+          //   { label: 'Friends' }
+          // ]
         },
         { label: 'Location' },
         { label: 'Finance' },
@@ -42,18 +44,23 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Professional',
         icon: 'pi pi-fw pi-pencil',
+        command: (onclick) => { this.route.navigate(['/professional']); },
         items: [
           { label: 'Curriculum Vitae', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Delete', icon: 'pi pi-fw pi-trash' },
-          { label: 'Refresh', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Open sources', icon: 'pi pi-fw pi-trash' },
+          { label: 'Research', icon: 'pi pi-fw pi-refresh' },
           { label: 'Accolades', icon: 'pi pi-fw pi-refresh' },
           { label: 'Non Profit', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Volunteer', icon: 'pi pi-fw pi-refresh' },
           { label: 'Local Business', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Skill set', icon: 'pi pi-fw pi-refresh' },
+
         ]
       },
       {
         label: 'About',
         icon: 'pi pi-fw pi-pencil',
+        command: (onclick) => { this.route.navigate(['/about']); },
         items: [
           { label: 'Contact', icon: 'pi pi-fw pi-trash' },
           { label: 'Ethics', icon: 'pi pi-fw pi-refresh' },
@@ -68,7 +75,7 @@ export class HeaderComponent implements OnInit {
               }
             ]
           },
-          { label: 'Activities', icon: 'pi pi-fw pi-refresh' },
+          { label: 'Activities', icon: 'pi pi-fw pi-refresh', },
           {
             label: 'Social', icon: 'pi pi-fw pi-refresh',
             items: [{
@@ -90,19 +97,19 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Resources',
         icon: 'pi pi-fw pi-pencil',
+        command: (onclick) => { this.route.navigate(['/resources']); },
         items: [
           { label: 'Blog', icon: 'pi pi-fw pi-trash' },
           { label: 'Learning', icon: 'pi pi-fw pi-refresh' },
           { label: 'Projects', icon: 'pi pi-fw pi-refresh' },
           { label: 'Newsletter', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Projects', icon: 'pi pi-fw pi-refresh' },
         ]
       }
     ];
   }
 
-  login(){
-      this.route.navigate(['workbench']);
-      this.display = false;
+  login() {
+    this.route.navigate(['workbench']);
+    this.display = false;
   }
 }
