@@ -6,13 +6,18 @@ import { PersonalComponent } from './header/personal/personal.component';
 import { ProfessionalComponent } from './header/professional/professional.component';
 import { AboutComponent } from './header/about/about.component';
 import { ResourcesComponent } from './header/resources/resources.component';
+import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.component';
+
 
 const routes: Routes = [
   {
     path: '', pathMatch: 'full', component: LandingComponent
   },
   {
-    path: 'personal', pathMatch: 'full', component: PersonalComponent
+    path: 'personal', pathMatch: 'full', component: PersonalComponent, children:
+      [
+        { path: 'milestone', pathMatch: 'full', component: MileStoneComponent }
+      ]
   },
   {
     path: 'professional', pathMatch: 'full', component: ProfessionalComponent
