@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYHqQns5W89hT3Yz93qwh7wspBefnSk18&callback=initMap"
+    async defer></script>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8
+      });
+    }
+  </script>
   <meta charset="utf-8">
   <title>NewApp</title>
   <base href="/">
@@ -8,7 +20,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
