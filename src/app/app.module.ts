@@ -28,7 +28,10 @@ import { AboutComponent } from './header/about/about.component';
 import { ResourcesComponent } from './header/resources/resources.component';
 import { OrganizationChartModule } from 'primeng/organizationchart';
 import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.component';
-import {ToolbarModule} from 'primeng/toolbar';
+import { ToolbarModule } from 'primeng/toolbar';
+import { FieldsetModule } from 'primeng/fieldset';
+import { BlogComponent } from './header/resources/blog/blog.component';
+
 
 
 @NgModule({
@@ -41,7 +44,8 @@ import {ToolbarModule} from 'primeng/toolbar';
     ProfessionalComponent,
     AboutComponent,
     ResourcesComponent,
-    MileStoneComponent
+    MileStoneComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,8 @@ import {ToolbarModule} from 'primeng/toolbar';
     SplitButtonModule,
     CardModule,
     OrganizationChartModule,
-    ToolbarModule
+    ToolbarModule,
+    FieldsetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

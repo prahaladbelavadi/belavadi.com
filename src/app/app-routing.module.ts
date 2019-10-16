@@ -7,6 +7,7 @@ import { ProfessionalComponent } from './header/professional/professional.compon
 import { AboutComponent } from './header/about/about.component';
 import { ResourcesComponent } from './header/resources/resources.component';
 import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.component';
+import { BlogComponent } from './header/resources/blog/blog.component';
 
 
 const routes: Routes = [
@@ -27,7 +28,10 @@ const routes: Routes = [
     path: 'about', pathMatch: 'full', component: AboutComponent
   },
   {
-    path: 'resources', pathMatch: 'full', component: ResourcesComponent
+    path: 'resources', children: [
+      { path: '', pathMatch: 'full', component: ResourcesComponent },
+      { path: 'blog', component: BlogComponent }
+    ],
   },
   {
     path: 'profile', component: ProfileComponent, children: []
