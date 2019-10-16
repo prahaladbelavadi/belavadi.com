@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -23,10 +23,11 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Personal',
         icon: 'pi pi-fw pi-pencil',
-        command: (onclick) => { this.route.navigate(['/personal']); },
+        command: (onclick) => { this.route.navigate(['personal']); },
         items: [{
           label: 'Mile Stone',
           icon: 'pi pi-fw pi-plus',
+          command: (onclick) => { this.route.navigate(['/personal', 'milestone']); },
           // items: [
           //   { label: 'Life' },
           //   { label: 'Family' },
@@ -109,7 +110,7 @@ export class HeaderComponent implements OnInit {
   }
 
   login() {
-    this.route.navigate(['workbench']);
+    this.route.navigate(['personal', 'milestone']);
     this.display = false;
   }
 }
