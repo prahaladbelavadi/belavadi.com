@@ -14,9 +14,10 @@ const routes: Routes = [
     path: '', pathMatch: 'full', component: LandingComponent
   },
   {
-    path: 'personal', pathMatch: 'full', component: PersonalComponent, children:
+    path: 'personal', children:
       [
-        { path: 'milestone', pathMatch: 'full', component: MileStoneComponent }
+        { path: '', pathMatch: 'full', component: PersonalComponent },
+        { path: 'milestone', component: MileStoneComponent }
       ]
   },
   {
