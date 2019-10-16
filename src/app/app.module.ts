@@ -32,6 +32,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { FieldsetModule } from 'primeng/fieldset';
 import { BlogComponent } from './header/resources/blog/blog.component';
 import { LearningComponent } from './header/resources/learning/learning.component';
+import { ProjectsComponent } from './header/resources/projects/projects.component';
 
 
 
@@ -47,7 +48,8 @@ import { LearningComponent } from './header/resources/learning/learning.componen
     ResourcesComponent,
     MileStoneComponent,
     BlogComponent,
-    LearningComponent
+    LearningComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

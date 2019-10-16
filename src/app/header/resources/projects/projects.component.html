@@ -1,0 +1,5 @@
+<p-fieldset *ngFor="let item of projectList" legend="{{item.tag}}" [toggleable]="true">
+    <p-panel header="{{item.header}}" [toggleable]="true">
+      Content {{item.content}}
+    </p-panel>
+  </p-fieldset>

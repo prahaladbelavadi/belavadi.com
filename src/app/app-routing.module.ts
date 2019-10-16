@@ -9,6 +9,7 @@ import { ResourcesComponent } from './header/resources/resources.component';
 import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.component';
 import { BlogComponent } from './header/resources/blog/blog.component';
 import { LearningComponent } from './header/resources/learning/learning.component';
+import { ProjectsComponent } from './header/resources/projects/projects.component';
 
 
 const routes: Routes = [
@@ -32,7 +33,9 @@ const routes: Routes = [
     path: 'resources', children: [
       { path: '', pathMatch: 'full', component: ResourcesComponent },
       { path: 'blog', component: BlogComponent },
-      { path: 'learning', component: LearningComponent }
+      { path: 'learning', component: LearningComponent },
+      { path: 'projects', component: ProjectsComponent }
+
     ],
   },
   {
