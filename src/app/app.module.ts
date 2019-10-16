@@ -31,6 +31,7 @@ import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.comp
 import { ToolbarModule } from 'primeng/toolbar';
 import { FieldsetModule } from 'primeng/fieldset';
 import { BlogComponent } from './header/resources/blog/blog.component';
+import { LearningComponent } from './header/resources/learning/learning.component';
 
 
 
@@ -45,7 +46,8 @@ import { BlogComponent } from './header/resources/blog/blog.component';
     AboutComponent,
     ResourcesComponent,
     MileStoneComponent,
-    BlogComponent
+    BlogComponent,
+    LearningComponent
   ],
   imports: [
     BrowserModule,
