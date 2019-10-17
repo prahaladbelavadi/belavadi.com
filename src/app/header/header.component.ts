@@ -118,6 +118,10 @@ export class HeaderComponent implements OnInit {
             label: 'Newsletter', icon: 'pi pi-fw pi-refresh',
             command: () => { this.route.navigate(['resources', 'newsletter']); }
           },
+          {
+            label: 'Terminal', icon: 'pi pi-fw pi-refresh',
+            command: () => { this.route.navigate(['resources', 'terminal']); }
+          },
         ]
       }
     ];

@@ -36,6 +36,9 @@ import { ProjectsComponent } from './header/resources/projects/projects.componen
 import { NewsletterComponent } from './header/resources/newsletter/newsletter.component';
 import { ChipsModule } from 'primeng/chips';
 import { FormsModule } from '@angular/forms';
+import { TerminalComponent } from './header/resources/terminal/terminal.component';
+import { TerminalModule } from 'primeng/terminal';
+
 
 
 @NgModule({
@@ -52,7 +55,8 @@ import { FormsModule } from '@angular/forms';
     BlogComponent,
     LearningComponent,
     ProjectsComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    TerminalComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +80,9 @@ import { FormsModule } from '@angular/forms';
     ToolbarModule,
     FieldsetModule,
     ChipsModule,
-    FormsModule
+    FormsModule,
+    TerminalModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,7 @@ import { BlogComponent } from './header/resources/blog/blog.component';
 import { LearningComponent } from './header/resources/learning/learning.component';
 import { ProjectsComponent } from './header/resources/projects/projects.component';
 import { NewsletterComponent } from './header/resources/newsletter/newsletter.component';
+import { TerminalComponent } from './header/resources/terminal/terminal.component';
 
 
 const routes: Routes = [
@@ -36,7 +37,8 @@ const routes: Routes = [
       { path: 'blog', component: BlogComponent },
       { path: 'learning', component: LearningComponent },
       { path: 'projects', component: ProjectsComponent },
-      { path: 'newsletter', component: NewsletterComponent }
+      { path: 'newsletter', component: NewsletterComponent },
+      { path: 'terminal', component: TerminalComponent }
 
 
     ],
