@@ -15,4 +15,7 @@ export class LandingComponent implements OnInit {
 
   ngOnInit() {
   }
+  save(){
+    console.log('Save button was clicked')
+  }
 }
