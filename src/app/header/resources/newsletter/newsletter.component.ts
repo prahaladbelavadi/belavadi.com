@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsletterComponent implements OnInit {
 
+  property = '';
   constructor() { }
 
   ngOnInit() {

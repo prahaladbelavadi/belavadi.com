@@ -34,7 +34,8 @@ import { BlogComponent } from './header/resources/blog/blog.component';
 import { LearningComponent } from './header/resources/learning/learning.component';
 import { ProjectsComponent } from './header/resources/projects/projects.component';
 import { NewsletterComponent } from './header/resources/newsletter/newsletter.component';
-
+import { ChipsModule } from 'primeng/chips';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -73,7 +74,9 @@ import { NewsletterComponent } from './header/resources/newsletter/newsletter.co
     CardModule,
     OrganizationChartModule,
     ToolbarModule,
-    FieldsetModule
+    FieldsetModule,
+    ChipsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
