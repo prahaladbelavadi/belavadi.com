@@ -106,14 +106,18 @@ export class HeaderComponent implements OnInit {
           },
           {
             label: 'Learning', icon: 'pi pi-fw pi-refresh',
-            command: () => { this.route.navigate(['/resources', 'learning']);}
+            command: () => { this.route.navigate(['/resources', 'learning']); }
           },
           {
             label: 'Projects', icon: 'pi pi-fw pi-refresh',
-          command: () => { this.route.navigate(['/resources', 'projects']);
-        }
-        },
-          { label: 'Newsletter', icon: 'pi pi-fw pi-refresh' },
+            command: () => {
+              this.route.navigate(['/resources', 'projects']);
+            }
+          },
+          {
+            label: 'Newsletter', icon: 'pi pi-fw pi-refresh',
+            command: () => { this.route.navigate(['resources', 'newsletter']); }
+          },
         ]
       }
     ];
