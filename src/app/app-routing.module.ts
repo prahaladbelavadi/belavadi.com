@@ -12,6 +12,7 @@ import { LearningComponent } from './header/resources/learning/learning.componen
 import { ProjectsComponent } from './header/resources/projects/projects.component';
 import { NewsletterComponent } from './header/resources/newsletter/newsletter.component';
 import { TerminalComponent } from './header/resources/terminal/terminal.component';
+import { StatusComponent } from './header/personal/status/status.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
     path: 'personal', children:
       [
         { path: '', pathMatch: 'full', component: PersonalComponent },
-        { path: 'milestone', component: MileStoneComponent }
+        { path: 'milestone', component: MileStoneComponent },
+        { path: 'status', component: StatusComponent }
       ]
   },
   {

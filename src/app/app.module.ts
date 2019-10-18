@@ -38,6 +38,7 @@ import { ChipsModule } from 'primeng/chips';
 import { FormsModule } from '@angular/forms';
 import { TerminalComponent } from './header/resources/terminal/terminal.component';
 import { TerminalModule } from 'primeng/terminal';
+import { StatusComponent } from './header/personal/status/status.component';
 
 
 
@@ -56,7 +57,8 @@ import { TerminalModule } from 'primeng/terminal';
     LearningComponent,
     ProjectsComponent,
     NewsletterComponent,
-    TerminalComponent
+    TerminalComponent,
+    StatusComponent
   ],
   imports: [
     BrowserModule,

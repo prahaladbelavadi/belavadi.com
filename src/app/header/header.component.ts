@@ -36,7 +36,11 @@ export class HeaderComponent implements OnInit {
         },
         { label: 'Location' },
         { label: 'Finance' },
-        { label: 'Status' },
+        {
+          label: 'Status',
+          icon: 'pi pi-fw pi-plus',
+          command: (onclick) => { this.route.navigate(['/personal', 'status']); },
+        },
         { label: 'Goals' },
         { label: 'Calendar' }
 
