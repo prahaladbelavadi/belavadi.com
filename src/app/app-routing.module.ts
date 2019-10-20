@@ -13,6 +13,7 @@ import { ProjectsComponent } from './header/resources/projects/projects.componen
 import { NewsletterComponent } from './header/resources/newsletter/newsletter.component';
 import { TerminalComponent } from './header/resources/terminal/terminal.component';
 import { StatusComponent } from './header/personal/status/status.component';
+import { ContactComponent } from './header/about/contact/contact.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,10 @@ const routes: Routes = [
     path: 'professional', pathMatch: 'full', component: ProfessionalComponent
   },
   {
-    path: 'about', pathMatch: 'full', component: AboutComponent
+    path: 'about', children: [
+      { path: '', pathMatch: 'full', component: AboutComponent },
+      { path: 'contact', component: ContactComponent }
+    ]
   },
   {
     path: 'resources', children: [

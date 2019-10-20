@@ -39,6 +39,7 @@ import { FormsModule } from '@angular/forms';
 import { TerminalComponent } from './header/resources/terminal/terminal.component';
 import { TerminalModule } from 'primeng/terminal';
 import { StatusComponent } from './header/personal/status/status.component';
+import { ContactComponent } from './header/about/contact/contact.component';
 
 
 
@@ -58,7 +59,8 @@ import { StatusComponent } from './header/personal/status/status.component';
     ProjectsComponent,
     NewsletterComponent,
     TerminalComponent,
-    StatusComponent
+    StatusComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
