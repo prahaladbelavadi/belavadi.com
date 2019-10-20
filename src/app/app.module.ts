@@ -40,6 +40,7 @@ import { TerminalComponent } from './header/resources/terminal/terminal.componen
 import { TerminalModule } from 'primeng/terminal';
 import { StatusComponent } from './header/personal/status/status.component';
 import { ContactComponent } from './header/about/contact/contact.component';
+import { EthicsComponent } from './header/about/ethics/ethics.component';
 
 
 
@@ -60,7 +61,8 @@ import { ContactComponent } from './header/about/contact/contact.component';
     NewsletterComponent,
     TerminalComponent,
     StatusComponent,
-    ContactComponent
+    ContactComponent,
+    EthicsComponent
   ],
   imports: [
     BrowserModule,

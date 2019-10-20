@@ -14,6 +14,7 @@ import { NewsletterComponent } from './header/resources/newsletter/newsletter.co
 import { TerminalComponent } from './header/resources/terminal/terminal.component';
 import { StatusComponent } from './header/personal/status/status.component';
 import { ContactComponent } from './header/about/contact/contact.component';
+import { EthicsComponent } from './header/about/ethics/ethics.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
   {
     path: 'about', children: [
       { path: '', pathMatch: 'full', component: AboutComponent },
-      { path: 'contact', component: ContactComponent }
+      { path: 'contact', component: ContactComponent },
+      { path: 'ethics', component: EthicsComponent }
     ]
   },
   {
