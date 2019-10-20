@@ -15,6 +15,7 @@ import { TerminalComponent } from './header/resources/terminal/terminal.componen
 import { StatusComponent } from './header/personal/status/status.component';
 import { ContactComponent } from './header/about/contact/contact.component';
 import { EthicsComponent } from './header/about/ethics/ethics.component';
+import { BooksComponent } from './header/about/books/books.component';
 
 
 const routes: Routes = [
@@ -36,7 +37,8 @@ const routes: Routes = [
     path: 'about', children: [
       { path: '', pathMatch: 'full', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'ethics', component: EthicsComponent }
+      { path: 'ethics', component: EthicsComponent },
+      { path: 'books', component: BooksComponent }
     ]
   },
   {

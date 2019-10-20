@@ -41,6 +41,7 @@ import { TerminalModule } from 'primeng/terminal';
 import { StatusComponent } from './header/personal/status/status.component';
 import { ContactComponent } from './header/about/contact/contact.component';
 import { EthicsComponent } from './header/about/ethics/ethics.component';
+import { BooksComponent } from './header/about/books/books.component';
 
 
 
@@ -62,7 +63,8 @@ import { EthicsComponent } from './header/about/ethics/ethics.component';
     TerminalComponent,
     StatusComponent,
     ContactComponent,
-    EthicsComponent
+    EthicsComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
