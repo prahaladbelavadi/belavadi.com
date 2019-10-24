@@ -16,6 +16,7 @@ import { StatusComponent } from './header/personal/status/status.component';
 import { ContactComponent } from './header/about/contact/contact.component';
 import { EthicsComponent } from './header/about/ethics/ethics.component';
 import { BooksComponent } from './header/about/books/books.component';
+import { InfluencesComponent } from './header/about/influences/influences.component';
 
 
 const routes: Routes = [
@@ -38,7 +39,9 @@ const routes: Routes = [
       { path: '', pathMatch: 'full', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'ethics', component: EthicsComponent },
-      { path: 'books', component: BooksComponent }
+      { path: 'books', component: BooksComponent },
+      { path: 'influences', component: InfluencesComponent },
+
     ]
   },
   {

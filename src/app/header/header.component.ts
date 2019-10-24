@@ -71,13 +71,18 @@ export class HeaderComponent implements OnInit {
             label: 'Contact', icon: 'pi pi-fw pi-trash',
             command: (onclick) => { this.route.navigate(['/about', 'contact']); }
           },
-          { label: 'Ethics', icon: 'pi pi-fw pi-refresh',
-          command: (onclick) => { this.route.navigate(['/about', 'ethics']); }
-        },
-          { label: 'Books', icon: 'pi pi-fw pi-refresh' ,
-          command: (onclick) => { this.route.navigate(['/about', 'books']); }
-        },
-          { label: 'Influences', icon: 'pi pi-fw pi-refresh' },
+          {
+            label: 'Ethics', icon: 'pi pi-fw pi-refresh',
+            command: (onclick) => { this.route.navigate(['/about', 'ethics']); }
+          },
+          {
+            label: 'Books', icon: 'pi pi-fw pi-refresh',
+            command: (onclick) => { this.route.navigate(['/about', 'books']); }
+          },
+          {
+            label: 'Influences', icon: 'pi pi-fw pi-refresh',
+            command: (onclick) => { this.route.navigate(['/about', 'influences']); }
+          },
           { label: 'Time Line', icon: 'pi pi-fw pi-refresh' },
           {
             label: 'Pursuits', icon: 'pi pi-fw pi-refresh',
