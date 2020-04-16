@@ -1,50 +1,48 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
 
-import { AccordionModule } from 'primeng/accordion';
-import { MenubarModule } from 'primeng/menubar';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { DialogModule } from 'primeng/dialog';
-import { PasswordModule } from 'primeng/password';
-import { TooltipModule } from 'primeng/tooltip';
-import { HeaderComponent } from './header/header.component';
-import { SlideMenuModule } from 'primeng/slidemenu';
-import { TieredMenuModule } from 'primeng/tieredmenu';
-import { PanelModule } from 'primeng/panel';
-import { LandingComponent } from './landing/landing.component';
-import { CarouselModule } from 'primeng/carousel';
-import { StepsModule } from 'primeng/steps';
-import { SplitButtonModule } from 'primeng/splitbutton';
-import { ProfileComponent } from './profile/profile.component';
-import { PersonalComponent } from './header/personal/personal.component';
-import { CardModule } from 'primeng/card';
-import { ProfessionalComponent } from './header/professional/professional.component';
-import { AboutComponent } from './header/about/about.component';
-import { ResourcesComponent } from './header/resources/resources.component';
-import { OrganizationChartModule } from 'primeng/organizationchart';
-import { MileStoneComponent } from './header/personal/mile-stone/mile-stone.component';
-import { ToolbarModule } from 'primeng/toolbar';
-import { FieldsetModule } from 'primeng/fieldset';
-import { BlogComponent } from './header/resources/blog/blog.component';
-import { LearningComponent } from './header/resources/learning/learning.component';
-import { ProjectsComponent } from './header/resources/projects/projects.component';
-import { NewsletterComponent } from './header/resources/newsletter/newsletter.component';
-import { ChipsModule } from 'primeng/chips';
-import { FormsModule } from '@angular/forms';
-import { TerminalComponent } from './header/resources/terminal/terminal.component';
-import { TerminalModule } from 'primeng/terminal';
-import { StatusComponent } from './header/personal/status/status.component';
-import { ContactComponent } from './header/about/contact/contact.component';
-import { EthicsComponent } from './header/about/ethics/ethics.component';
-import { BooksComponent } from './header/about/books/books.component';
-import { InfluencesComponent } from './header/about/influences/influences.component';
-
-
+import { AccordionModule } from "primeng/accordion";
+import { MenubarModule } from "primeng/menubar";
+import { ButtonModule } from "primeng/button";
+import { InputTextModule } from "primeng/inputtext";
+import { DialogModule } from "primeng/dialog";
+import { PasswordModule } from "primeng/password";
+import { TooltipModule } from "primeng/tooltip";
+import { SlideMenuModule } from "primeng/slidemenu";
+import { TieredMenuModule } from "primeng/tieredmenu";
+import { PanelModule } from "primeng/panel";
+import { CarouselModule } from "primeng/carousel";
+import { StepsModule } from "primeng/steps";
+import { SplitButtonModule } from "primeng/splitbutton";
+import { ProfileComponent } from "./pages/profile/profile.component";
+import { CardModule } from "primeng/card";
+import { OrganizationChartModule } from "primeng/organizationchart";
+import { ToolbarModule } from "primeng/toolbar";
+import { FieldsetModule } from "primeng/fieldset";
+import { ChipsModule } from "primeng/chips";
+import { FormsModule } from "@angular/forms";
+import { TerminalModule } from "primeng/terminal";
+import { HeaderComponent } from './layout/header/header.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { PersonalComponent } from './layout/header/personal/personal.component';
+import { ProfessionalComponent } from './layout/header/professional/professional.component';
+import { AboutComponent } from './layout/header/about/about.component';
+import { ResourcesComponent } from './layout/header/resources/resources.component';
+import { MileStoneComponent } from './layout/header/personal/mile-stone/mile-stone.component';
+import { BlogComponent } from './layout/header/resources/blog/blog.component';
+import { LearningComponent } from './layout/header/resources/learning/learning.component';
+import { ProjectsComponent } from './layout/header/resources/projects/projects.component';
+import { NewsletterComponent } from './layout/header/resources/newsletter/newsletter.component';
+import { TerminalComponent } from './layout/header/resources/terminal/terminal.component';
+import { StatusComponent } from './layout/header/personal/status/status.component';
+import { ContactComponent } from './layout/header/about/contact/contact.component';
+import { EthicsComponent } from './layout/header/about/ethics/ethics.component';
+import { BooksComponent } from './layout/header/about/books/books.component';
+import { InfluencesComponent } from './layout/header/about/influences/influences.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +64,7 @@ import { InfluencesComponent } from './header/about/influences/influences.compon
     ContactComponent,
     EthicsComponent,
     BooksComponent,
-    InfluencesComponent
+    InfluencesComponent,
   ],
   imports: [
     BrowserModule,
@@ -91,10 +89,9 @@ import { InfluencesComponent } from './header/about/influences/influences.compon
     FieldsetModule,
     ChipsModule,
     FormsModule,
-    TerminalModule
-
+    TerminalModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
