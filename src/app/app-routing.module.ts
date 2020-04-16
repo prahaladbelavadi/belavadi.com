@@ -17,6 +17,8 @@ import { ContactComponent } from "./layout/header/about/contact/contact.componen
 import { EthicsComponent } from "./layout/header/about/ethics/ethics.component";
 import { BooksComponent } from "./layout/header/about/books/books.component";
 import { InfluencesComponent } from "./layout/header/about/influences/influences.component";
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
+import { PageNotFoundComponent } from "./pages/page-not-found/page-not-found.component";
 
 const routes: Routes = [
   {
@@ -63,6 +65,13 @@ const routes: Routes = [
     component: ProfileComponent,
     children: [],
   },
+  {
+    path: "dashboard",
+    component: DashboardComponent,
+    children: [],
+    canActivate: [],
+  },
+  { path: "**", component: PageNotFoundComponent },
 ];
 
 @NgModule({

@@ -144,7 +144,7 @@ export class HeaderComponent implements OnInit {
   }
 
   login() {
-    this.route.navigate(['personal', 'milestone']);
+    this.route.navigate(['dashboard']);
     this.display = false;
   }
 }
